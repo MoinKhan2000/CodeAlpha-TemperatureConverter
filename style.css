@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f3f4;
+    background: url('./background.jpg')center center/cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section>div>h1 {
+    padding: 1rem;
+    color: black;
+    font-size: 30px;
+    font-size: 3rem;
+    background: rgba(255,255,255,0.4);
+    box-shadow: -5px -1px 13px 7px white;
+    border-radius: 33px;
+    text-shadow: 0px 2px 14px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 2px 20px #a4a4a4, -10px -10px 20px #ffffff;
+}
+
+.cart {
+    min-width: 350px;
+    min-height: 350px;
+    border: 2px solid #af5aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#left {
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    backdrop-filter: blur(10px) saturate(122%);
+    -webkit-backdrop-filter: blur(10px)saturate(122%);
+    background-color: rgba(181, 195, 222, 0.51);
+    border: none;
+}
+
+#right {
+    border-radius: 0px 10px 10px 0px;
+    background: #af5aff;
+    color: white;
+    font-size: 60px;
+    backdrop-filter: blur(10px) saturate(122%);
+    -webkit-backdrop-filter: blur(10px)saturate(122%);
+    background-color: rgba(181, 195, 222, 0.51);
+    /* border-radius: 12px; */
+    border: none;
+    ;
+}
+
+#right center {
+    font-size: 30px;
+}
+
+#convertTo {
+    width: 72%;
+}
+
+#left div {
+    min-width: 84%;
+    color: black;
+    font-weight: bold;
+}
+
+#left h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+#left input[type='number'],
+#left select {
+    padding: 5px;
+    border: 2px solid;
+    border-color: #a9abac;
+    outline:none;
+    margin: 0px;
+}
+
+#convert {
+    padding: 8px;
+    width: 40%;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    transition: background-color, color, border-color, .2s;
+}
+
+ion-icon{
+    filter:invert();
+}
+
+#convert:hover {
+    background-color: white;
+    border-color: #fff;
+    color: black;
+}
+span {
+    color: black;
+    font-weight: bold;
+}
